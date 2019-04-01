@@ -6,6 +6,7 @@ EXPOSE 80
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
+    libzip-dev \
     zlib1g-dev \
     ssmtp \ 
  && rm -rf /var/lib/apt/lists/*
