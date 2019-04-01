@@ -7,6 +7,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     zlib1g-dev \
+    ssmtp \ 
  && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install mysqli
